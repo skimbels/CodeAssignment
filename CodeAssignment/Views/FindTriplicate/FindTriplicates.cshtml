@@ -1,0 +1,9 @@
+﻿@model CodeAssignment.Models.FindTriplicateModel
+
+<h2>Triplicate Finder</h2>
+<form action="/FindTriplicate/FindTriplicates" method="get">
+    <input name="numbers" type="text" value="@Model.Numbers" />
+    <button>Find Triplicates</button>
+    <label name="result">@Model.Result</label>
+    <label class="error">@Model.ErrorMessage</label>
+</form>
